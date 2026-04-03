@@ -1,0 +1,77 @@
+.admin-page {
+  max-width: 900px;
+}
+
+.error-state {
+  color: var(--danger);
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.stat-card:hover {
+  border-color: #3a3a44;
+}
+
+.stat-card.accent {
+  border-color: rgba(232, 255, 71, 0.3);
+  background: linear-gradient(135deg, #141417 0%, #1a1d10 100%);
+}
+
+.stat-card.wide {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #141417 0%, #101520 100%);
+  border-color: rgba(71, 200, 255, 0.25);
+}
+
+.stat-label {
+  font-size: 11px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.stat-value {
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.stat-value.large {
+  font-size: 44px;
+  color: #47c8ff;
+}
+
+.stat-card.accent .stat-value {
+  color: var(--accent);
+}
+
+.stat-icon {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-size: 28px;
+  color: var(--border);
+}
