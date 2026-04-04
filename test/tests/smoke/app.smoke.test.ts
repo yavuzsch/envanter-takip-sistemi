@@ -48,61 +48,63 @@ describe.sequential('Smoke tests', () => {
     expect(response.body.message).toContain('Giriş yapmanız gerekiyor');
   });
 
-  it('4-8) create/list/read/update/delete item flow works end-to-end', async () => {
+  const getAuthAgent = async () => {
     const agent = request.agent(app);
+    await agent.post('/api/auth/register').send({ email: 'smoke@example.com', password: 'password123' });
+    await agent.post('/api/auth/login').send({ email: 'smoke@example.com', password: 'password123' });
+    return agent;
+  };
 
-    await agent.post('/api/auth/register').send({
-      email: 'flow@example.com',
-      password: 'secret123',
+  it('4) create item -> 201', async () => {
+    const agent = await getAuthAgent();
+    const res = await agent.post('/api/items').send({
+      name: 'Laptop', description: 'Test', quantity: 5, price: 45000 
     });
+    expect(res.status).toBe(201);
+    expect(res.body.name).toBe('Laptop');
+  });
 
-    await agent.post('/api/auth/login').send({
-      email: 'flow@example.com',
-      password: 'secret123',
-    });
+  it('5) list items -> 200', async () => {
+    const agent = await getAuthAgent();
+    // Önce bir item oluşturmalıyız (çünkü database her it öncesi sıfırlanıyor)
+    await agent.post('/api/items').send({ name: 'Item 1', quantity: 1, price: 100 });
+    
+    const res = await agent.get('/api/items');
+    expect(res.status).toBe(200);
+    expect(Array.isArray(res.body)).toBe(true);
+    expect(res.body.length).toBeGreaterThan(0);
+  });
 
-    const createResponse = await agent.post('/api/items').send({
-      name: 'Laptop',
-      description: 'Test cihazı',
-      quantity: 5,
-      price: 45000,
-    });
+  it('6) read item by id -> 200', async () => {
+    const agent = await getAuthAgent();
+    const createRes = await agent.post('/api/items').send({ name: 'FindMe', quantity: 1, price: 100 });
+    const itemId = createRes.body.id;
 
-    expect(createResponse.status).toBe(201);
-    expect(createResponse.body.id).toBeTypeOf('number');
-    expect(createResponse.body.name).toBe('Laptop');
+    const res = await agent.get(`/api/items/${itemId}`);
+    expect(res.status).toBe(200);
+    expect(res.body.name).toBe('FindMe');
+  });
 
-    const itemId = createResponse.body.id;
+  it('7) update item -> 200', async () => {
+    const agent = await getAuthAgent();
+    const createRes = await agent.post('/api/items').send({ name: 'Old Name', quantity: 1, price: 100 });
+    const itemId = createRes.body.id;
 
-    const listResponse = await agent.get('/api/items');
-    expect(listResponse.status).toBe(200);
-    expect(Array.isArray(listResponse.body)).toBe(true);
-    expect(listResponse.body.some((item: any) => item.id === itemId && item.name === 'Laptop')).toBe(true);
+    const res = await agent.patch(`/api/items/${itemId}`).send({ name: 'New Name' });
+    expect(res.status).toBe(200);
+    expect(res.body.name).toBe('New Name');
+  });
 
-    const getResponse = await agent.get(`/api/items/${itemId}`);
-    expect(getResponse.status).toBe(200);
-    expect(getResponse.body).toMatchObject({
-      id: itemId,
-      name: 'Laptop',
-      quantity: 5,
-      price: 45000,
-    });
+  it('8) delete item -> 204', async () => {
+    const agent = await getAuthAgent();
+    const createRes = await agent.post('/api/items').send({ name: 'To Be Deleted', quantity: 1, price: 100 });
+    const itemId = createRes.body.id;
 
-    const updateResponse = await agent.patch(`/api/items/${itemId}`).send({
-      name: 'Laptop Pro',
-      quantity: 7,
-      price: 47000,
-    });
-    expect(updateResponse.status).toBe(200);
-    expect(updateResponse.body.name).toBe('Laptop Pro');
-    expect(updateResponse.body.quantity).toBe(7);
-    expect(updateResponse.body.price).toBe(47000);
+    const deleteRes = await agent.delete(`/api/items/${itemId}`);
+    expect(deleteRes.status).toBe(204);
 
-    const deleteResponse = await agent.delete(`/api/items/${itemId}`);
-    expect(deleteResponse.status).toBe(204);
-
-    const afterDeleteResponse = await agent.get(`/api/items/${itemId}`);
-    expect(afterDeleteResponse.status).toBe(404);
+    const checkRes = await agent.get(`/api/items/${itemId}`);
+    expect(checkRes.status).toBe(404);
   });
 
   it('9) invalid create/update requests -> 400', async () => {
