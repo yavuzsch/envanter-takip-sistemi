@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
+import bcrypt from 'bcrypt';
 
-// 1. MOCK YAPISI: Veritabanını tamamen taklit ediyoruz
 const mockPrepare = {
   get: vi.fn(),
   run: vi.fn(),
@@ -15,7 +15,6 @@ vi.mock('../../src/server/config/db', () => ({
   getDb: () => mockDb,
 }));
 
-// Bcrypt'i taklit ediyoruz: Her şifre karşılaştırmasını "doğru" kabul etsin
 vi.mock('bcrypt', () => ({
   default: {
     compare: vi.fn().mockResolvedValue(true),
@@ -25,7 +24,6 @@ vi.mock('bcrypt', () => ({
   hash: vi.fn().mockResolvedValue('hashed_password'),
 }));
 
-// Importlar mock tanımlamasından SONRA gelmeli
 import { registerUser, loginUser } from '../../src/server/modules/auth/auth.service';
 import {
   createItem,
@@ -43,10 +41,8 @@ describe.sequential('Service unit tests', () => {
     mockPrepare.all.mockReset();
   });
 
-  // ---------------- AUTH TESTLERİ ----------------
 
   it('registerUser creates a new user', async () => {
-    // Önce e-posta kontrolü (get) boş döner, sonra kayıt (run) yapılır
     mockPrepare.get.mockReturnValue(undefined); 
     mockPrepare.run.mockReturnValue({ lastInsertRowid: 1 });
 
@@ -61,7 +57,6 @@ describe.sequential('Service unit tests', () => {
   });
 
   it('registerUser rejects duplicate email', async () => {
-    // E-posta zaten var gibi davran (get dolu döner)
     mockPrepare.get.mockReturnValue({ id: 1 });
 
     await expect(registerUser('duplicate@example.com', 'secret123')).rejects.toMatchObject({
@@ -74,8 +69,7 @@ describe.sequential('Service unit tests', () => {
     mockPrepare.get.mockReturnValue({
       id: 1,
       email: 'login-success@example.com',
-      password: 'hashed_password', // Veritabanında hashli duruyormuş gibi davranıyoruz      
-      role: 'user',
+      password: 'hashed_password', 
     });
 
     const user = await loginUser('login-success@example.com', 'secret123');
@@ -92,11 +86,25 @@ describe.sequential('Service unit tests', () => {
     });
   });
 
-  // ---------------- ITEM TESTLERİ ----------------
+  it('loginUser rejects wrong password with 401', async () => {
+   mockPrepare.get.mockReturnValue({
+     id: 1,
+     email: 'test@example.com',
+     password: 'hashed_password_in_db',
+     role: 'user',
+   });
+
+   vi.mocked(bcrypt.compare).mockImplementationOnce(async () => false);
+
+   await expect(loginUser('test@example.com', 'wrong-password')).rejects.toMatchObject({
+     status: 401,
+     message: 'E-posta veya parola hatalı.', 
+    });
+  });
+
 
   it('createItem creates an item and trims name', () => {
     mockPrepare.run.mockReturnValue({ lastInsertRowid: 1 });
-    // createItem sonrası id almak için tekrar get çağrılabilir
     mockPrepare.get.mockReturnValue({ id: 1, name: 'Klavye', quantity: 3, price: 2500, created_by: 10 });
 
     const item = createItem({
@@ -108,7 +116,7 @@ describe.sequential('Service unit tests', () => {
       10
     );
 
-    expect(item.name).toBe('Klavye'); // Trim kontrolü
+    expect(item.name).toBe('Klavye'); 
     expect(item.id).toBe(1);
   });
 
@@ -136,7 +144,6 @@ describe.sequential('Service unit tests', () => {
   });
 
   it('updateItem updates selected fields', () => {
-    // updateItem önce ürünü bulur (get), sonra günceller (run), sonra güncel hali döner (get)
     mockPrepare.get
       .mockReturnValueOnce({ id: 1, name: 'Telefon', price: 15000 }) // İlk bulma
       .mockReturnValueOnce({ id: 1, name: 'Telefon Pro', price: 18000 }); // Güncel hal
