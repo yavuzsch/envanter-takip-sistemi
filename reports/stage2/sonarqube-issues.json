@@ -1,0 +1,2659 @@
+{
+  "bugs": {
+    "total": 2,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 2
+    },
+    "effortTotal": 10,
+    "issues": [
+      {
+        "key": "7d59d27c-4c0d-464f-a950-4004ca03ad76",
+        "rule": "typescript:S1082",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 57,
+        "hash": "58a1c32e3b63e577b194a6521c78d7c9",
+        "textRange": {
+          "startLine": 57,
+          "endLine": 57,
+          "startOffset": 4,
+          "endOffset": 54
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Visible, non-interactive elements with click handlers must have at least one keyboard listener.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "d520b941-b178-487f-88ca-1c01b411456b",
+        "rule": "typescript:S1082",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 58,
+        "hash": "349eb3efafa3bfa3fb29d65c4b19e918",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startOffset": 6,
+          "endOffset": 71
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Visible, non-interactive elements with click handlers must have at least one keyboard listener.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "BUG",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "COMPLETE",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      }
+    ],
+    "components": [
+      {
+        "key": "inventory-app-stage",
+        "enabled": true,
+        "qualifier": "TRK",
+        "name": "YKG",
+        "longName": "YKG"
+      },
+      {
+        "key": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "ItemModal.tsx",
+        "longName": "src/client/components/ItemModal.tsx",
+        "path": "src/client/components/ItemModal.tsx"
+      }
+    ],
+    "facets": []
+  },
+  "code_smells": {
+    "total": 52,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 500,
+      "total": 52
+    },
+    "effortTotal": 507,
+    "issues": [
+      {
+        "key": "574ddb96-a782-425b-b525-6aff66b21b63",
+        "rule": "typescript:S7772",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:test/src/server/config/db.ts",
+        "project": "inventory-app-stage",
+        "line": 2,
+        "hash": "4b6e4e765587d1ad118e965d7d21a315",
+        "textRange": {
+          "startLine": 2,
+          "endLine": 2,
+          "startOffset": 17,
+          "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `node:path` over `path`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "convention",
+          "import",
+          "nodejs"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "3d5ba286-208d-4392-933e-89aa28ac3d20",
+        "rule": "typescript:S7772",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:test/src/server/config/db.ts",
+        "project": "inventory-app-stage",
+        "line": 3,
+        "hash": "e6257dc4b1f21417043851734f5ab373",
+        "textRange": {
+          "startLine": 3,
+          "endLine": 3,
+          "startOffset": 15,
+          "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `node:fs` over `fs`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "convention",
+          "import",
+          "nodejs"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "6433d506-3250-4d68-a3b1-01f02d946494",
+        "rule": "typescript:S7773",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:test/src/server/middleware/validate.ts",
+        "project": "inventory-app-stage",
+        "line": 33,
+        "hash": "d7ade09ccdb83d0154bbf9c6b96819ab",
+        "textRange": {
+          "startLine": 33,
+          "endLine": 33,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.isNaN` over `isNaN`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "",
+        "tags": [
+          "convention",
+          "es2015"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "5f812e9f-3b12-4797-996c-61cb61d24601",
+        "rule": "typescript:S7773",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:test/src/server/middleware/validate.ts",
+        "project": "inventory-app-stage",
+        "line": 68,
+        "hash": "d83ce4112b65722f0f48a8b9b3e1506a",
+        "textRange": {
+          "startLine": 68,
+          "endLine": 68,
+          "startOffset": 8,
+          "endOffset": 13
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.isNaN` over `isNaN`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "",
+        "tags": [
+          "convention",
+          "es2015"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "16dd006d-a8d1-48f6-8442-de5da4b4a9e5",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 18,
+        "hash": "ce8fa48d03e048f77bacc1cc61987066",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startOffset": 4,
+          "endOffset": 68
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "45f50001-8162-45bf-9afd-61bd223e491e",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 21,
+        "hash": "62ffe019ff131e70e6cc88796dad6bcc",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startOffset": 4,
+          "endOffset": 73
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "57e7e47d-25e8-47e2-adb5-cad6852f5ea8",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 29,
+        "hash": "f6a2e8dd9a52713febb12675b4f01a54",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startOffset": 4,
+          "endOffset": 64
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "39fbb2db-783c-4de3-ac0f-6b4a59cef4e1",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 52,
+        "hash": "40e28578cb99eb93c6238df6479019cf",
+        "textRange": {
+          "startLine": 52,
+          "endLine": 52,
+          "startOffset": 4,
+          "endOffset": 66
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "258183e0-f3bc-498e-b6ac-9ce0f96e3a49",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 58,
+        "hash": "40e28578cb99eb93c6238df6479019cf",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startOffset": 4,
+          "endOffset": 66
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "4b22d3c6-fdb7-4006-b9d8-e5fb668ca1ee",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/item/item.service.ts",
+        "project": "inventory-app-stage",
+        "line": 28,
+        "hash": "d830198677b7cf1a3e16d42c97429a18",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startOffset": 4,
+          "endOffset": 56
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "187fc968-f4e3-4e2d-b4a9-bf7f670777be",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:test/src/server/modules/item/item.service.ts",
+        "project": "inventory-app-stage",
+        "line": 78,
+        "hash": "241137e6c0118ed50b5723c8ae686427",
+        "textRange": {
+          "startLine": 78,
+          "endLine": 78,
+          "startOffset": 4,
+          "endOffset": 71
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-23T10:23:43+0000",
+        "updateDate": "2026-04-23T10:23:43+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "68bbe2f0-8518-4b32-bf39-7f6232ce1770",
+        "rule": "typescript:S1128",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:server.ts",
+        "project": "inventory-app-stage",
+        "line": 2,
+        "hash": "c93995530754a71b11d2f586b1585eb5",
+        "textRange": {
+          "startLine": 2,
+          "endLine": 2,
+          "startOffset": 7,
+          "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this unused import of 'express'.",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "",
+        "tags": [
+          "es2015",
+          "type-dependent",
+          "unused"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "2a25a657-346d-408d-9eb6-0442a8585c44",
+        "rule": "typescript:S6759",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/App.tsx",
+        "project": "inventory-app-stage",
+        "line": 14,
+        "hash": "666c20b1fe191f92762ccc0bf7eb1803",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startOffset": 20,
+          "endOffset": 63
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Mark the props of the component as read-only.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "type-dependent",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "42aa4568-c431-4e72-8846-b90f84ba67f9",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 1,
+        "hash": "59c9723216381e94f362aa4ad6d74967",
+        "textRange": {
+          "startLine": 1,
+          "endLine": 1,
+          "startOffset": 19,
+          "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "73ecfc5b-bc3c-4c79-a283-1c913e59682f",
+        "rule": "typescript:S6759",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 12,
+        "hash": "507e5c8c172f9711403f00fa31766760",
+        "textRange": {
+          "startLine": 12,
+          "endLine": 12,
+          "startOffset": 34,
+          "endOffset": 67
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Mark the props of the component as read-only.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "type-dependent",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "948b7b80-b03a-4aa7-8867-fcb8d59aab20",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 21,
+        "hash": "696af144cdc111bce03a4adf5bcdd96d",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startOffset": 33,
+          "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "51978fbf-8235-4aa8-b9b5-1797a8e7e223",
+        "rule": "typescript:S6848",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 57,
+        "hash": "58a1c32e3b63e577b194a6521c78d7c9",
+        "textRange": {
+          "startLine": 57,
+          "endLine": 57,
+          "startOffset": 4,
+          "endOffset": 54
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "4de07190-e821-40fd-a421-58c7e72e5ac0",
+        "rule": "typescript:S6848",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 58,
+        "hash": "349eb3efafa3bfa3fb29d65c4b19e918",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startOffset": 6,
+          "endOffset": 71
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "fae441e5-fda1-4cf2-bdb5-be5c8dd63c2a",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 66,
+        "hash": "157ecacb331bc0f7f5ab3623f4431714",
+        "textRange": {
+          "startLine": 66,
+          "endLine": 66,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "f7b7a2ef-7a34-4149-b29f-7c8a06e416fc",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 76,
+        "hash": "7bc6b7c1045d02416bf2ac6ed396de75",
+        "textRange": {
+          "startLine": 76,
+          "endLine": 76,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "21807344-8825-46b9-a99a-03f3ed8a4734",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 85,
+        "hash": "1c335e054e763744b76b72e332f7b31d",
+        "textRange": {
+          "startLine": 85,
+          "endLine": 85,
+          "startOffset": 15,
+          "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "94f28202-33c3-43ee-8185-39c1218ee0e4",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 96,
+        "hash": "a8a9db5c4c6b9984f9e731e922eb140d",
+        "textRange": {
+          "startLine": 96,
+          "endLine": 96,
+          "startOffset": 15,
+          "endOffset": 20
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "e8039ceb-e114-47fd-89c5-0553143ada07",
+        "rule": "typescript:S3358",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "project": "inventory-app-stage",
+        "line": 116,
+        "hash": "fa8f4412fa7d70f40592d3e7fd67cb57",
+        "textRange": {
+          "startLine": 116,
+          "endLine": 116,
+          "startOffset": 43,
+          "endOffset": 71
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested ternary operation into an independent statement.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "confusing"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "a0d7d57e-7754-4275-9976-63e4b7567e1a",
+        "rule": "typescript:S6772",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/Layout.tsx",
+        "project": "inventory-app-stage",
+        "line": 28,
+        "hash": "ceee5a66ecff7557f8c0f2c2f443ef39",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startOffset": 0,
+          "endOffset": 47
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Ambiguous spacing after previous element span",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "FORMATTED",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "56d35a86-2891-463d-baf5-4e668fc88419",
+        "rule": "typescript:S6772",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/components/Layout.tsx",
+        "project": "inventory-app-stage",
+        "line": 38,
+        "hash": "5548938394a89a4cfd601d3ff99aae1f",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startOffset": 0,
+          "endOffset": 49
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Ambiguous spacing after previous element span",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "FORMATTED",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "LOW"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "f67dbae7-273b-4368-a199-3c5cebd35eb4",
+        "rule": "typescript:S6759",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/context/AuthContext.tsx",
+        "project": "inventory-app-stage",
+        "line": 20,
+        "hash": "8be8a37e010723284a175eb459de2719",
+        "textRange": {
+          "startLine": 20,
+          "endLine": 20,
+          "startOffset": 29,
+          "endOffset": 66
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Mark the props of the component as read-only.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "type-dependent",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "58b69ffe-d5c4-46fa-ae24-6c093c86d2f5",
+        "rule": "typescript:S6481",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/context/AuthContext.tsx",
+        "project": "inventory-app-stage",
+        "line": 49,
+        "hash": "4c9e8402a99ddc739d2ee95e5ef96757",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startOffset": 33,
+          "endOffset": 75
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "The object passed as the value prop to the Context provider changes every render. To fix this consider wrapping it in a useMemo hook.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "performance",
+          "react",
+          "jsx"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "EFFICIENT",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "0b509aac-cbd0-40d4-9a13-ae8fa6ddf83d",
+        "rule": "typescript:S3358",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/AdminPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 35,
+        "hash": "4b918b7cb55ff7c6957217214716ec4f",
+        "textRange": {
+          "startLine": 35,
+          "endLine": 57,
+          "startOffset": 10,
+          "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested ternary operation into an independent statement.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "confusing"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "e809b37f-5a8f-4d22-8ea2-82e3bf17bec0",
+        "rule": "typescript:S3358",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/AdminPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 37,
+        "hash": "92088e93f25801919acc3feb2aacc159",
+        "textRange": {
+          "startLine": 37,
+          "endLine": 57,
+          "startOffset": 10,
+          "endOffset": 14
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested ternary operation into an independent statement.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "confusing"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "ba858c45-a0a5-43b7-982c-217a7eb23db0",
+        "rule": "typescript:S1854",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/ItemsPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 24,
+        "hash": "8d4fb7296306362d1a7aaf4d6b4b1972",
+        "textRange": {
+          "startLine": 24,
+          "endLine": 24,
+          "startOffset": 9,
+          "endOffset": 17
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Remove this useless assignment to variable \"deleteId\".",
+        "effort": "1min",
+        "debt": "1min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "unused"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "72a84e7e-3f19-4cc0-8e70-43ffb0df4db9",
+        "rule": "typescript:S7764",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/pages/ItemsPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 44,
+        "hash": "3ca0196d9ac4a9d235105e2ae4bf4543",
+        "textRange": {
+          "startLine": 44,
+          "endLine": 44,
+          "startOffset": 9,
+          "endOffset": 15
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `globalThis` over `window`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "",
+        "tags": [
+          "portability",
+          "es2020"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "e05cbffb-8ca1-4c54-8954-fd50cd0e6d2b",
+        "rule": "typescript:S3358",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/ItemsPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 110,
+        "hash": "57d1839ddced895606d4fb4fec4bc616",
+        "textRange": {
+          "startLine": 110,
+          "endLine": 173,
+          "startOffset": 10,
+          "endOffset": 7
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested ternary operation into an independent statement.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "confusing"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "d063e801-47b3-4a4a-888e-9769b4a3ab1b",
+        "rule": "typescript:S3358",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/ItemsPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 140,
+        "hash": "47eac6263efba825a233cad4d79402af",
+        "textRange": {
+          "startLine": 140,
+          "endLine": 142,
+          "startOffset": 28,
+          "endOffset": 32
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Extract this nested ternary operation into an independent statement.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "confusing"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "4afcc3ed-5d31-4422-8547-b9ac7b1d4439",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/pages/LoginPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 1,
+        "hash": "a1ad6ca98edaa47190ca28edf61f83b4",
+        "textRange": {
+          "startLine": 1,
+          "endLine": 1,
+          "startOffset": 19,
+          "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "a923edf6-e52f-47d7-babc-12090da90cc2",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/pages/LoginPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 14,
+        "hash": "696af144cdc111bce03a4adf5bcdd96d",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startOffset": 33,
+          "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "cd996616-8e14-457f-8deb-0f07fef4e315",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/LoginPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 41,
+        "hash": "b70b3d72fda00a064f9e528c07a25260",
+        "textRange": {
+          "startLine": 41,
+          "endLine": 41,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "6fd54d83-b35a-4935-ac24-5ee127cbea37",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/LoginPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 52,
+        "hash": "2bcf123a63dea1ef1ae99ba34bfd4e79",
+        "textRange": {
+          "startLine": 52,
+          "endLine": 52,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "37788149-a1c8-41d3-af7d-8f9d6c5eeae7",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/pages/RegisterPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 1,
+        "hash": "a1ad6ca98edaa47190ca28edf61f83b4",
+        "textRange": {
+          "startLine": 1,
+          "endLine": 1,
+          "startOffset": 19,
+          "endOffset": 28
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "210d1535-6c43-4d4e-b9f4-49bcc41182d3",
+        "rule": "typescript:S1874",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/client/pages/RegisterPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 14,
+        "hash": "696af144cdc111bce03a4adf5bcdd96d",
+        "textRange": {
+          "startLine": 14,
+          "endLine": 14,
+          "startOffset": 33,
+          "endOffset": 42
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "'FormEvent' is deprecated.",
+        "effort": "15min",
+        "debt": "15min",
+        "author": "",
+        "tags": [
+          "cwe",
+          "type-dependent",
+          "obsolete"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "fa71f728-d4fa-4166-890d-84f43d764f83",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/RegisterPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 41,
+        "hash": "b70b3d72fda00a064f9e528c07a25260",
+        "textRange": {
+          "startLine": 41,
+          "endLine": 41,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "591ac736-089d-477a-be1e-b075f1de79f6",
+        "rule": "typescript:S6853",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/client/pages/RegisterPage.tsx",
+        "project": "inventory-app-stage",
+        "line": 52,
+        "hash": "2bcf123a63dea1ef1ae99ba34bfd4e79",
+        "textRange": {
+          "startLine": 52,
+          "endLine": 52,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "A form label must be associated with a control.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "accessibility",
+          "react"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "LOGICAL",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "07868ecb-ac90-478e-b5ea-090e10f20e53",
+        "rule": "typescript:S7772",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/server/config/db.ts",
+        "project": "inventory-app-stage",
+        "line": 2,
+        "hash": "4b6e4e765587d1ad118e965d7d21a315",
+        "textRange": {
+          "startLine": 2,
+          "endLine": 2,
+          "startOffset": 17,
+          "endOffset": 23
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `node:path` over `path`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "convention",
+          "import",
+          "nodejs"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "65c16a47-6e9a-44c1-bbbe-e9b297dd4c75",
+        "rule": "typescript:S7772",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/server/config/db.ts",
+        "project": "inventory-app-stage",
+        "line": 3,
+        "hash": "e6257dc4b1f21417043851734f5ab373",
+        "textRange": {
+          "startLine": 3,
+          "endLine": 3,
+          "startOffset": 15,
+          "endOffset": 19
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `node:fs` over `fs`.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+          "convention",
+          "import",
+          "nodejs"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "d9160d2f-b4b3-411e-8ca7-3d031e713c4b",
+        "rule": "typescript:S7773",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/server/middleware/validate.ts",
+        "project": "inventory-app-stage",
+        "line": 33,
+        "hash": "d7ade09ccdb83d0154bbf9c6b96819ab",
+        "textRange": {
+          "startLine": 33,
+          "endLine": 33,
+          "startOffset": 13,
+          "endOffset": 18
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.isNaN` over `isNaN`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "",
+        "tags": [
+          "convention",
+          "es2015"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "213dd774-6c30-4b84-95ca-6220bfd21c16",
+        "rule": "typescript:S7773",
+        "severity": "MINOR",
+        "component": "inventory-app-stage:src/server/middleware/validate.ts",
+        "project": "inventory-app-stage",
+        "line": 68,
+        "hash": "d83ce4112b65722f0f48a8b9b3e1506a",
+        "textRange": {
+          "startLine": 68,
+          "endLine": 68,
+          "startOffset": 8,
+          "endOffset": 13
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Prefer `Number.isNaN` over `isNaN`.",
+        "effort": "2min",
+        "debt": "2min",
+        "author": "",
+        "tags": [
+          "convention",
+          "es2015"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": true,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "RELIABILITY",
+            "severity": "MEDIUM"
+          },
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "LOW"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "fb6712e5-9c7c-40b5-92e0-6e0bb3d0d978",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 18,
+        "hash": "ce8fa48d03e048f77bacc1cc61987066",
+        "textRange": {
+          "startLine": 18,
+          "endLine": 18,
+          "startOffset": 4,
+          "endOffset": 68
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "0aca9559-476a-4742-87ca-10166ffd1fad",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 21,
+        "hash": "62ffe019ff131e70e6cc88796dad6bcc",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startOffset": 4,
+          "endOffset": 73
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "13784db9-ea56-42d4-9694-b22b60e69c50",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 29,
+        "hash": "f6a2e8dd9a52713febb12675b4f01a54",
+        "textRange": {
+          "startLine": 29,
+          "endLine": 29,
+          "startOffset": 4,
+          "endOffset": 64
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "075ebb16-1523-4156-be0a-febe0d944f63",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 52,
+        "hash": "40e28578cb99eb93c6238df6479019cf",
+        "textRange": {
+          "startLine": 52,
+          "endLine": 52,
+          "startOffset": 4,
+          "endOffset": 66
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "2a04d4c7-597f-456b-bdcf-53681e9654bb",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "project": "inventory-app-stage",
+        "line": 58,
+        "hash": "40e28578cb99eb93c6238df6479019cf",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 58,
+          "startOffset": 4,
+          "endOffset": 66
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "09cc6930-d7a1-49e4-90e2-d8827eea5b2d",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/item/item.service.ts",
+        "project": "inventory-app-stage",
+        "line": 28,
+        "hash": "d830198677b7cf1a3e16d42c97429a18",
+        "textRange": {
+          "startLine": 28,
+          "endLine": 28,
+          "startOffset": 4,
+          "endOffset": 56
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      },
+      {
+        "key": "c6c20221-9766-459a-9359-5dfc7d2b61a8",
+        "rule": "typescript:S3696",
+        "severity": "MAJOR",
+        "component": "inventory-app-stage:src/server/modules/item/item.service.ts",
+        "project": "inventory-app-stage",
+        "line": 78,
+        "hash": "241137e6c0118ed50b5723c8ae686427",
+        "textRange": {
+          "startLine": 78,
+          "endLine": 78,
+          "startOffset": 4,
+          "endOffset": 71
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Expected an error object to be thrown.",
+        "effort": "20min",
+        "debt": "20min",
+        "author": "",
+        "tags": [
+          "error-handling",
+          "api-design"
+        ],
+        "creationDate": "2026-04-22T21:14:22+0000",
+        "updateDate": "2026-04-22T21:14:22+0000",
+        "type": "CODE_SMELL",
+        "scope": "MAIN",
+        "quickFixAvailable": false,
+        "messageFormattings": [],
+        "codeVariants": [],
+        "cleanCodeAttribute": "CONVENTIONAL",
+        "cleanCodeAttributeCategory": "CONSISTENT",
+        "impacts": [
+          {
+            "softwareQuality": "MAINTAINABILITY",
+            "severity": "MEDIUM"
+          }
+        ],
+        "issueStatus": "OPEN",
+        "prioritizedRule": false,
+        "fromSonarQubeUpdate": false,
+        "internalTags": [],
+        "linkedTicketStatus": "NOT_LINKED"
+      }
+    ],
+    "components": [
+      {
+        "key": "inventory-app-stage:src/client/pages/RegisterPage.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "RegisterPage.tsx",
+        "longName": "src/client/pages/RegisterPage.tsx",
+        "path": "src/client/pages/RegisterPage.tsx"
+      },
+      {
+        "key": "inventory-app-stage:src/client/pages/AdminPage.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "AdminPage.tsx",
+        "longName": "src/client/pages/AdminPage.tsx",
+        "path": "src/client/pages/AdminPage.tsx"
+      },
+      {
+        "key": "inventory-app-stage:src/client/pages/LoginPage.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "LoginPage.tsx",
+        "longName": "src/client/pages/LoginPage.tsx",
+        "path": "src/client/pages/LoginPage.tsx"
+      },
+      {
+        "key": "inventory-app-stage:src/client/pages/ItemsPage.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "ItemsPage.tsx",
+        "longName": "src/client/pages/ItemsPage.tsx",
+        "path": "src/client/pages/ItemsPage.tsx"
+      },
+      {
+        "key": "inventory-app-stage:test/src/server/config/db.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "db.ts",
+        "longName": "test/src/server/config/db.ts",
+        "path": "test/src/server/config/db.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/client/App.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "App.tsx",
+        "longName": "src/client/App.tsx",
+        "path": "src/client/App.tsx"
+      },
+      {
+        "key": "inventory-app-stage:test/src/server/middleware/validate.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "validate.ts",
+        "longName": "test/src/server/middleware/validate.ts",
+        "path": "test/src/server/middleware/validate.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/server/middleware/validate.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "validate.ts",
+        "longName": "src/server/middleware/validate.ts",
+        "path": "src/server/middleware/validate.ts"
+      },
+      {
+        "key": "inventory-app-stage",
+        "enabled": true,
+        "qualifier": "TRK",
+        "name": "YKG",
+        "longName": "YKG"
+      },
+      {
+        "key": "inventory-app-stage:src/server/config/db.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "db.ts",
+        "longName": "src/server/config/db.ts",
+        "path": "src/server/config/db.ts"
+      },
+      {
+        "key": "inventory-app-stage:test/src/server/modules/auth/auth.service.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "auth.service.ts",
+        "longName": "test/src/server/modules/auth/auth.service.ts",
+        "path": "test/src/server/modules/auth/auth.service.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/client/components/Layout.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "Layout.tsx",
+        "longName": "src/client/components/Layout.tsx",
+        "path": "src/client/components/Layout.tsx"
+      },
+      {
+        "key": "inventory-app-stage:src/client/components/ItemModal.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "ItemModal.tsx",
+        "longName": "src/client/components/ItemModal.tsx",
+        "path": "src/client/components/ItemModal.tsx"
+      },
+      {
+        "key": "inventory-app-stage:test/src/server/modules/item/item.service.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "item.service.ts",
+        "longName": "test/src/server/modules/item/item.service.ts",
+        "path": "test/src/server/modules/item/item.service.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/server/modules/item/item.service.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "item.service.ts",
+        "longName": "src/server/modules/item/item.service.ts",
+        "path": "src/server/modules/item/item.service.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/client/context/AuthContext.tsx",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "AuthContext.tsx",
+        "longName": "src/client/context/AuthContext.tsx",
+        "path": "src/client/context/AuthContext.tsx"
+      },
+      {
+        "key": "inventory-app-stage:server.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "server.ts",
+        "longName": "server.ts",
+        "path": "server.ts"
+      },
+      {
+        "key": "inventory-app-stage:src/server/modules/auth/auth.service.ts",
+        "enabled": true,
+        "qualifier": "FIL",
+        "name": "auth.service.ts",
+        "longName": "src/server/modules/auth/auth.service.ts",
+        "path": "src/server/modules/auth/auth.service.ts"
+      }
+    ],
+    "facets": []
+  }
+}
