@@ -1,5 +1,4 @@
 import "dotenv/config";
-import express from "express";
 import cors from "cors"; // npm install cors
 import app from "./src/server/app";
 import { getDb } from "./src/server/config/db";

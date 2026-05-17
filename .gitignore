@@ -1,5 +1,31 @@
+# Bağımlılıklar
 node_modules/
+
+# Derleme çıktıları
 dist/
+
+# Ortam değişkenleri
 .env
+.env.local
+.env.*.local
+
+# Veritabanı dosyaları
 database.db
+database.db-shm
+database.db-wal
 sessions.db
+
+# TypeScript derleme önbelleği
+*.tsbuildinfo
+
+# Log dosyaları
+*.log
+npm-debug.log*
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

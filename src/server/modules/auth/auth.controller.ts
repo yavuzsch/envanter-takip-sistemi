@@ -6,8 +6,9 @@ export async function register(req: Request, res: Response): Promise<void> {
     const { email, password } = req.body;
     const user = await registerUser(email, password);
     res.status(201).json({ message: "Kayıt başarılı.", user });
-  } catch (err: any) {
-    res.status(err.status ?? 500).json({ message: err.message ?? "Sunucu hatası." });
+  } catch (err) {
+    const appErr = err as { status?: number; message?: string };
+    res.status(appErr.status ?? 500).json({ message: appErr.message ?? "Sunucu hatası." });
   }
 }
 
@@ -20,8 +21,9 @@ export async function login(req: Request, res: Response): Promise<void> {
     req.session.role = user.role;
 
     res.status(200).json({ message: "Giriş başarılı.", user });
-  } catch (err: any) {
-    res.status(err.status ?? 500).json({ message: err.message ?? "Sunucu hatası." });
+  } catch (err) {
+    const appErr = err as { status?: number; message?: string };
+    res.status(appErr.status ?? 500).json({ message: appErr.message ?? "Sunucu hatası." });
   }
 }
 

@@ -7,13 +7,16 @@ import adminRouter from "./modules/admin/admin.router";
 
 const SQLiteStore = connectSqlite3(session);
 
+type SQLiteStoreConstructor = new (options: { db: string; dir: string }) => session.Store;
+const TypedSQLiteStore = SQLiteStore as unknown as SQLiteStoreConstructor;
+
 const app = express();
 
 app.use(express.json());
 
 app.use(
   session({
-    store: new (SQLiteStore as any)({ db: "sessions.db", dir: "./" }),
+    store: new TypedSQLiteStore({ db: "sessions.db", dir: "./" }),
     secret: process.env.SESSION_SECRET ?? "fallback-secret",
     resave: false,
     saveUninitialized: false,

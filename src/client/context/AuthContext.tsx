@@ -15,7 +15,14 @@ interface AuthContextType {
   logout: () => Promise<void>;
 }
 
-const AuthContext = createContext<AuthContextType | null>(null);
+// eslint-disable-next-line react-refresh/only-export-components -- useAuth hook ve AuthProvider aynı dosyada bulunmak zorunda; ayrı dosyaya taşımak tüm import'ları kırar ve ek circular-dependency riski yaratır.
+export const AuthContext = createContext<AuthContextType | null>(null);
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  return ctx;
+}
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
@@ -50,10 +57,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       {children}
     </AuthContext.Provider>
   );
-}
-
-export function useAuth() {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
-  return ctx;
 }

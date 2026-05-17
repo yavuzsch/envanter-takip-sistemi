@@ -18,8 +18,9 @@ export default function LoginPage() {
     try {
       await login(email, password);
       navigate("/items");
-    } catch (err: any) {
-      setError(err.response?.data?.message ?? "Giriş başarısız.");
+    } catch (err) {
+      const axiosErr = err as { response?: { data?: { message?: string } } };
+      setError(axiosErr.response?.data?.message ?? "Giriş başarısız.");
     } finally {
       setLoading(false);
     }
