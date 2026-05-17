@@ -36,8 +36,9 @@ export default function ItemModal({ item, onSaved, onClose }: Props) {
         res = await api.post<Item>("/items", body);
       }
       onSaved(res.data);
-    } catch (err: any) {
-      const msgs = err.response?.data?.errors ?? [err.response?.data?.message ?? "Hata oluştu."];
+    } catch (err) {
+      const axiosErr = err as { response?: { data?: { errors?: string[]; message?: string } } };
+      const msgs = axiosErr.response?.data?.errors ?? [axiosErr.response?.data?.message ?? "Hata oluştu."];
       setError(msgs.join(" "));
     } finally {
       setLoading(false);

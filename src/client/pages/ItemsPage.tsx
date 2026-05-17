@@ -21,22 +21,20 @@ export default function ItemsPage() {
   const [search, setSearch] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [editItem, setEditItem] = useState<Item | null>(null);
-  const [deleteId, setDeleteId] = useState<number | null>(null);
 
   const isAdmin = user?.role === "admin";
 
-  async function fetchItems() {
-    try {
-      const res = await api.get<Item[]>("/items");
-      setItems(res.data);
-    } catch {
-      // hata
-    } finally {
-      setLoading(false);
-    }
-  }
-
   useEffect(() => {
+    async function fetchItems() {
+      try {
+        const res = await api.get<Item[]>("/items");
+        setItems(res.data);
+      } catch {
+        // hata
+      } finally {
+        setLoading(false);
+      }
+    }
     fetchItems();
   }, []);
 
@@ -44,7 +42,6 @@ export default function ItemsPage() {
     if (!window.confirm("Bu ürünü silmek istediğinizden emin misiniz?")) return;
     await api.delete(`/items/${id}`);
     setItems((prev) => prev.filter((i) => i.id !== id));
-    setDeleteId(null);
   }
 
   function openCreate() {
