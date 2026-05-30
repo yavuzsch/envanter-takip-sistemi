@@ -1,9 +1,8 @@
 # Envanter Takip Sistemi
+TypeScript ve Express tabanlı RESTful envanter yönetim uygulaması.
 
-Yazılım Kalite Güvencesi dersi kapsamında geliştirilmiş, TypeScript ve Express tabanlı RESTful envanter yönetim uygulaması.
 
 ## Teknoloji Yığını
-
 - **Backend:** Node.js (LTS), TypeScript, Express.js
 - **Veritabanı:** SQLite (better-sqlite3)
 - **Oturum Yönetimi:** express-session + httpOnly cookie
@@ -11,8 +10,8 @@ Yazılım Kalite Güvencesi dersi kapsamında geliştirilmiş, TypeScript ve Exp
 - **Frontend:** React + Vite (bonus)
 - **Test:** Vitest + Supertest
 
-## Kurulum
 
+## Kurulum
 ```bash
 # 1. Bağımlılıkları yükle
 npm install
@@ -24,17 +23,26 @@ npm run db:seed
 npm run dev
 ```
 
-## Varsayılan Kullanıcılar
+Uygulama başladıktan sonra tarayıcıda aç: http://localhost:5173
 
+
+## Varsayılan Kullanıcılar
 | Rol | E-posta | Parola |
 |---|---|---|
 | Admin | admin@inventory.com | admin123 |
 | User | user@inventory.com | user123 |
 
-## Testleri Çalıştırma
 
+## Testleri Çalıştırma
+Testler ayrı bir klasörde bulunmaktadır. Önce bağımlılıkları yükleyin:
 ```bash
-# Tüm testler (17 unit + 10 smoke)
+cd test
+npm install
+```
+
+Ardından testleri çalıştırın:
+```bash
+# Tüm testler
 npm test
 
 # Sadece unit testler
@@ -44,42 +52,38 @@ npm run test:unit
 npm run test:smoke
 ```
 
-## API Uç Noktaları
 
-| Method | Endpoint | Açıklama | Yetki |
+## API Uç Noktaları
+| Metod | Uçnokta | Açıklama | Yetki |
 |---|---|---|---|
 | POST | /api/auth/register | Kayıt ol | Herkese açık |
 | POST | /api/auth/login | Giriş yap | Herkese açık |
 | POST | /api/auth/logout | Çıkış yap | Giriş gerekli |
-| GET | /api/items | Tüm itemları listele | Giriş gerekli |
-| GET | /api/items/:id | Tek item getir | Giriş gerekli |
-| POST | /api/items | Item oluştur | Giriş gerekli |
-| PATCH | /api/items/:id | Item güncelle | Giriş gerekli |
-| DELETE | /api/items/:id | Item sil | Giriş gerekli |
-| GET | /api/admin/report | Yönetici raporu | Admin gerekli |
+| GET | /api/items | Tüm ögeleri listele | Giriş gerekli |
+| GET | /api/items/:id | Tek öge getir | Giriş gerekli |
+| POST | /api/items | Öge oluştur | Giriş gerekli |
+| PATCH | /api/items/:id | Öge güncelle | Giriş gerekli |
+| DELETE | /api/items/:id | Öge sil | Giriş gerekli |
+| GET | /api/admin/report | Yönetici raporu | Yönetici gerekli |
+
 
 ## Proje Yapısı
-
 ```
 ├── src/
-│   ├── client/            # React frontend
-│   └── server/
-│       ├── modules/       # auth, item, admin
-│       ├── middleware/    # auth, validate
-│       └── config/        # db
-├── test/
-│   ├── unit/
-│   └── smoke/
-├── index.html             # Frontend giriş noktası
-├── server.ts              # Backend giriş noktası
-├── vite.config.ts         # Vite derleme yapılandırması
-├── tsconfig.json          # TypeScript yapılandırması
-├── tsconfig.server.json   # Sunucu TypeScript yapılandırması
+│   ├── client/  # frontend
+│   └── server/  # backend
+├── test/  # testler
+│   ├── src/
+│   ├── tests/
+│   │   ├── unit/
+│   │   └── smoke/
+│   └── package.json
+├── reports/  # ESLint ve SonarQube raporları
+├── index.html
+├── server.ts
+├── vite.config.ts
+├── tsconfig.json
+├── tsconfig.server.json
+├── sonar-project.properties
 └── package.json
 ```
-
-## Kaynak Kod
-
-https://github.com/yavuzsch/envanter-takip-sistemi
-
----
